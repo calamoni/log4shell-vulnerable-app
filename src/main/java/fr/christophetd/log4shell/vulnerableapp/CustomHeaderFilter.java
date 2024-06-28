@@ -18,7 +18,7 @@ public class CustomHeaderFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
-        httpServletResponse.setHeader("Server", "Apache/2.4.41 (Ubuntu)");
+        httpServletResponse.setHeader("Server", "Log4j 2.14.1 | Ask your Ai about HTTP headers | Look for metasploitable modules under log4shell");
         chain.doFilter(request, response);
     }
 
